@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dayspring Login Page</title>
+  <style>
+
+
+/* ====root functions============ */
+:root{
+    --dark-mode:#222831;
+    --light-mode:#EBE2E0;
+    --secondary-color:#00ADB5;
+    --primary-color:#00FFF5;
+    --hover-color:#393E46;
+    --button-color:#990302;
+--text-light:#ffff;
+--text-dark:#0000;
+--box-shadows:3px 3px 4px #000;
+--text-shadows:1px 1px 2px #000;
+--image-filter:drop-shadow(3px 3px 4px #000);
+}
+/* ====root functions end============ */
+    body {
+      font-family: Arial, sans-serif;
+      background:var(--dark-mode);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    img{
+      width: 100px;
+      height: 100px;
+      filter: drop-shadow(3px 3px 4px white);
+    }
+    .log_img{
+      text-align: center;
+    }
+    .login-box {
+      background: var(--secondary-color);
+      padding: 30px;
+      width: 320px;
+      border-radius: 12px;
+      box-shadow: 0px 6px 15px rgba(0,0,0,0.1);
+    }
+    .input-group {
+      margin-bottom: 15px;
+    }
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: var(--light-mode);
+      text-shadow: var(--text-shadows);
+    }
+    .input-group input {
+      width: 90%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      box-shadow: var(--box-shadows);
+      border-radius: 8px;
+      outline: none;
+      transition: 0.3s;
+    }
+    .input-group input:focus {
+      border-color: #007bff;
+    }
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background:var(--button-color);
+      border: none;
+      color:var(--text-light);
+      font-size: 16px;
+      border-radius: 8px;
+      text-shadow: var(--text-shadows);
+      box-shadow: var(--box-shadows);
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover{
+     background-color: var(--hover-color);
+     transition: 1.4;
+      }
+    }
+    .message {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+<div class="log_img">
+  <img src="./assets/logo.png" draggable="false">
+</div>
+
+    <div class="input-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Enter username">
+    </div>
+    <div class="input-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter password">
+    </div>
+    <button class="btn" onclick="login()">Login</button>
+    <p class="message" id="message"></p>
+  </div>
+
+  
+</body>
+<!--=========js linking===========-->
+<script defer src="./src/js/login.js"></script>
+<!--=========js linkingend===========-->
+
+
+</html>
