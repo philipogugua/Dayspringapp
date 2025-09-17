@@ -1,7 +1,7 @@
 const users = [
       { username: "dsa_user1", password: "da_lg234" },
       { username: "dsa_user2", password: "da_lg235" },
-      { username: "dsa_user3", password: "ds_lg236" }
+      { username: "philipwillson", password: "07061277506P" }
     ];
 
     function login() {
