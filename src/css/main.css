@@ -27,9 +27,8 @@ html{
 
  
 body{
-font-family: 'Press Start 2P', system-ui;   
-  font-weight: 400;
-    font-style: normal;
+font-family: sans-serif;   
+  
 }
 
 
@@ -281,8 +280,8 @@ section img{
 
 /*=======footer======= */
 footer svg{
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     }
  footer p{
 font-size: small;    
@@ -291,7 +290,7 @@ footer{
         left: 1%;
 }
 nav{
-    gap: 30px;
+    gap: 20px;
 }
 /*=======footer end======= */
 
